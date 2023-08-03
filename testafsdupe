@@ -1,0 +1,408 @@
+local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kiet1308/tvkhub/main/rac"))()
+local windowz = uilibrary:CreateWindow("UI Library", "AFS", true)
+
+local Page1 = windowz:CreatePage("Trade CC")
+
+
+local Section1 = Page1:CreateSection("AFS DUPE TRADE")
+
+Section1:CreateButton("By Tobidupebest", function ()
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/AFS-Dataloss-GUI.lua"))()
+end)
+
+local Page1 = windowz:CreatePage("Add items")
+
+local Section1 = Page1:CreateSection("AFS DUPE TRADE")
+
+Section1:CreateButton("add items/1", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "DmgBoost",
+            [2] = 240
+        },
+        ["3"] = {
+            [1] = "ShinyBoost",
+            [2] = 97
+        },
+        ["2"] = {
+            [1] = "YenBoost",
+            [2] = 249
+        },
+        ["5"] = {
+            [1] = "XpBoost",
+            [2] = 227
+        },
+        ["4"] = {
+            [1] = "SuperDmgBoost",
+            [2] = 100
+        },
+        ["6"] = {
+            [1] = "SuperLuckBoost",
+            [2] = 100
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/2", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "LuckBoost",
+            [2] = 246
+        },
+        ["3"] = {
+            [1] = "SuperDropsBoost",
+            [2] = 100
+        },
+        ["2"] = {
+            [1] = "SuperXpBoost",
+            [2] = 100
+        },
+        ["5"] = {
+            [1] = "DropsBoost",
+            [2] = 250
+        },
+        ["4"] = {
+            [1] = "SuperYenBoost",
+            [2] = 100
+        },
+        ["6"] = {
+            [1] = "SecretPityPotion",
+            [2] = 48
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/3", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "DungeonSummon",
+            [2] = 97
+        },
+        ["3"] = {
+            [1] = "TitanSummon",
+            [2] = 100
+        },
+        ["2"] = {
+            [1] = "AvatarDoubleUp",
+            [2] = 1000
+        },
+        ["5"] = {
+            [1] = "AvatarLevelUp",
+            [2] = 1000
+        },
+        ["4"] = {
+            [1] = "CloneToken",
+            [2] = 1000
+        },
+        ["6"] = {
+            [1] = "AvatarCoin",
+            [2] = 97
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/4", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "Ticket",
+            [2] = 246
+        },
+        ["3"] = {
+            [1] = "LegendaryFruit",
+            [2] = 99912
+        },
+        ["2"] = {
+            [1] = "EpicFruit",
+            [2] = 249975
+        },
+        ["5"] = {
+            [1] = "SecretFruit",
+            [2] = 4500
+        },
+        ["4"] = {
+            [1] = "MythicalFruit",
+            [2] = 30000
+        },
+        ["6"] = {
+            [1] = "DivineFruit",
+            [2] = 1499
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/5", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "TowerShard",
+            [2] = 100000
+        },
+        ["3"] = {
+            [1] = "DBZShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "SummerShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "JojoShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "NarutoShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "OnePieceShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/6", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "AOTShard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "TokyoGhoulShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "DemonSlayerShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "SAOShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "HxHShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "BleachShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/7", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "JJKShard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "7DSShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "OPMShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "BlackCloverShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "FateShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "FMAShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/8", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "SlimeShard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "RoRShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "FireForceShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "ReZeroShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "FairyTailShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "ChainsawManShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/9", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "Mob100Shard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "BorutoShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "DorohedoroShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "JJBAStoneOceanShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "TokyoRevengerShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "YugiohShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/10", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "KLKShard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "ShieldHeroShard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "BerserkShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "SoulEaterShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "OverlordShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "CodeGeassShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/11", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "MadeInAbyssShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "BTYBWShard",
+            [2] = 10000
+        },
+        ["3"] = {
+            [1] = "DemonSlayer2Shard",
+            [2] = 10000
+        },
+        ["2"] = {
+            [1] = "OPWanoShard",
+            [2] = 10000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add items/12", function ()
+ local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "YellowFragment",
+            [2] = 995
+        },
+        ["3"] = {
+            [1] = "BlueFragment",
+            [2] = 994
+        },
+        ["2"] = {
+            [1] = "RedFragment",
+            [2] = 995
+        },
+        ["5"] = {
+            [1] = "OrangeFragment",
+            [2] = 998
+        },
+        ["4"] = {
+            [1] = "GreenFragment",
+            [2] = 998
+        },
+        ["6"] = {
+            [1] = "PurpleFragment",
+            [2] = 999
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
+
+
+
