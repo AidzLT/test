@@ -471,7 +471,7 @@ end
 end)
 
 Section1:CreateButton("use boost binh thuong", function ()
-for i = 1,250 do --number of times to loop
+for i = 1,245 do --number of times to loop
 local args = {
     [1] = "DmgBoost"
 }
