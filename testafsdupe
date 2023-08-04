@@ -11,6 +11,10 @@ Section1:CreateButton("By Tobidupebest", function ()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/AFS-Dataloss-GUI.lua"))()
 end)
 
+Section1:CreateButton("simple spy", function ()
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
 local Page1 = windowz:CreatePage("Add items")
 
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
@@ -19,57 +23,58 @@ Section1:CreateButton("add items/1", function ()
   local args = {
     [1] = {
         ["1"] = {
-            [1] = "DmgBoost",
-            [2] = 245
-        },
-        ["3"] = {
-            [1] = "ShinyBoost",
-            [2] = 100
-        },
-        ["2"] = {
-            [1] = "YenBoost",
-            [2] = 250
-        },
-        ["5"] = {
-            [1] = "XpBoost",
-            [2] = 250
-        },
-        ["4"] = {
             [1] = "SuperDmgBoost",
             [2] = 100
-        },
-        ["6"] = {
-            [1] = "SuperLuckBoost",
-            [2] = 100
-        }
-    }
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
-end)
-
-Section1:CreateButton("add items/2", function ()
-  local args = {
-    [1] = {
-        ["1"] = {
-            [1] = "LuckBoost",
-            [2] = 250
         },
         ["3"] = {
             [1] = "SuperDropsBoost",
             [2] = 100
         },
         ["2"] = {
+            [1] = "SuperLuckBoost",
+            [2] = 100
+        },
+        ["5"] = {
             [1] = "SuperXpBoost",
             [2] = 100
+        },
+        ["4"] = {
+            [1] = "SuperYenBoost",
+            [2] = 100
+        },
+        ["6"] = {
+            [1] = "ShinyBoost",
+            [2] = 100
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+
+end)
+
+Section1:CreateButton("add items/2", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "DmgBoost",
+            [2] = 245
+        },
+        ["3"] = {
+            [1] = "LuckBoost",
+            [2] = 250
+        },
+        ["2"] = {
+            [1] = "YenBoost",
+            [2] = 250
         },
         ["5"] = {
             [1] = "DropsBoost",
             [2] = 250
         },
         ["4"] = {
-            [1] = "SuperYenBoost",
-            [2] = 100
+            [1] = "XpBoost",
+            [2] = 250
         },
         ["6"] = {
             [1] = "SecretPityPotion",
@@ -407,6 +412,7 @@ local Page1 = windowz:CreatePage("USE ITEMS")
 
 local Section1 = Page1:CreateSection("USE ALL ITEMS SUPER BOOST")
 
+Section1:CreateButton("1", function ()
 for i = 1,100 do --number of times to loop
 local args = {
     [1] = "ShinyBoost"
@@ -462,6 +468,7 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
 end
+end)
 
 
 
