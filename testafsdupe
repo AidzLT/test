@@ -412,7 +412,7 @@ local Page1 = windowz:CreatePage("USE ITEMS")
 
 local Section1 = Page1:CreateSection("USE ALL ITEMS SUPER BOOST")
 
-Section1:CreateButton("1", function ()
+Section1:CreateButton("use boost sieu cap", function ()
 for i = 1,100 do --number of times to loop
 local args = {
     [1] = "ShinyBoost"
@@ -464,6 +464,56 @@ end
 for i = 1,100 do --number of times to loop
 local args = {
     [1] = "SuperXpBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+end)
+
+Section1:CreateButton("use boost binh thuong", function ()
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "DmgBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "LuckBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "YenBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "DropsBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "SuperDropsBoost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+
+for i = 1,250 do --number of times to loop
+local args = {
+    [1] = "XpBoost"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("UseItem"):FireServer(unpack(args))
