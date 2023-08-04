@@ -7,12 +7,24 @@ local Page1 = windowz:CreatePage("Trade CC")
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
 
 Section1:CreateButton("By Tobidupebest", function ()
-  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/AFS-Dataloss-GUI.lua"))()
 end)
 
 Section1:CreateButton("simple spy", function ()
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
+Section1:CreateButton("add ticket", function ()
+  local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "Ticket",
+            [2] = 1
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
 end)
 
 local Page1 = windowz:CreatePage("Add items")
