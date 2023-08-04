@@ -23,7 +23,6 @@ Section1:CreateButton("add ticket", function ()
         }
     }
 }
-
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
 end)
 
