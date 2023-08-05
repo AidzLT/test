@@ -26,6 +26,24 @@ Section1:CreateButton("add ticket", function ()
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
 end)
 
+Section1:CreateButton("trade rainkid258", function ()
+local args = {
+    [1] = game:GetService("Players"):WaitForChild("rainkid258"),
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeRequest"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("accept nhanvathucau426", function ()
+local args = {
+    [1] = game:GetService("Players"):WaitForChild("NhanvatHucau426"),
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeRequest"):FireServer(unpack(args))
+end)
+
 local Page1 = windowz:CreatePage("Add items")
 
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
