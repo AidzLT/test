@@ -44,6 +44,47 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeRequest"):FireServer(unpack(args))
 end)
 
+Section1:CreateButton("ready trade", function ()
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeReady"):FireServer(unpack(args))
+end)
+
+Section1:CreateButton("add all frag", function ()
+local args = {
+    [1] = {
+        ["1"] = {
+            [1] = "YellowFragment",
+            [2] = 1000
+        },
+        ["3"] = {
+            [1] = "BlueFragment",
+            [2] = 1000
+        },
+        ["2"] = {
+            [1] = "RedFragment",
+            [2] = 1000
+        },
+        ["5"] = {
+            [1] = "OrangeFragment",
+            [2] = 1000
+        },
+        ["4"] = {
+            [1] = "GreenFragment",
+            [2] = 1000
+        },
+        ["6"] = {
+            [1] = "PurpleFragment",
+            [2] = 1000
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
+end)
+
 local Page1 = windowz:CreatePage("Add items")
 
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
