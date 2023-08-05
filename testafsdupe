@@ -368,16 +368,24 @@ Section1:CreateButton("add items/11", function ()
             [1] = "MadeInAbyssShard",
             [2] = 10000
         },
-        ["4"] = {
-            [1] = "BTYBWShard",
-            [2] = 10000
-        },
         ["3"] = {
             [1] = "DemonSlayer2Shard",
             [2] = 10000
         },
         ["2"] = {
             [1] = "OPWanoShard",
+            [2] = 10000
+        },
+        ["5"] = {
+            [1] = "ChristmasShard",
+            [2] = 10000
+        },
+        ["4"] = {
+            [1] = "BTYBWShard",
+            [2] = 10000
+        },
+        ["6"] = {
+            [1] = "HalloweenShard",
             [2] = 10000
         }
     }
