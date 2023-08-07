@@ -89,6 +89,21 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("TradeUpdate"):FireServer(unpack(args))
 end)
 
+Section1:CreateButton("Server Hop", function ()
+local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+module:Teleport(game.PlaceId)
+end)
+
+Section1:CreateButton("Rejoin Server", function ()
+  local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+
+
+ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
+end)
+
 local Page1 = windowz:CreatePage("Add items")
 
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
